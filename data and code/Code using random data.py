@@ -18,13 +18,13 @@ def myplot(x, y, s, bins=1000):
     return heatmap.T, extent
 
 
-fig, axs = plt.subplots(2, 2)
+fig, axs = plt.subplots(1, 2)
 
 # Generate some test data
 x = np.random.randn(1000)
 y = np.random.randn(1000)
 
-sigmas = [0, 16, 32, 64]
+sigmas = [0, 16]
 
 for ax, s in zip(axs.flatten(), sigmas):
     if s == 0:

@@ -32,7 +32,7 @@ ndvi = (NIR_band.astype(float)-red_band.astype(float))/(NIR_band.astype(float)+r
 ndvi_flat = np.ndarray.flatten(ndvi)
 red_band_flat = np.ndarray.flatten(red_band)
 
-# Generate some test data
+# Image data
 x = ndvi_flat
 y = red_band_flat
 

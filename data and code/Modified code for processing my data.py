@@ -22,7 +22,7 @@ def myplot(x, y, s, bins=1000):
 
 fig, axs = plt.subplots(1, 2)
 
-dataset = rasterio.open('E:/Jupyter Notebook/LC81490312016259LGN00/LC8_subset_layerstacking.tif')
+dataset = rasterio.open('../LC8_subset_layerstacking.tif')
 red_band = dataset.read(4)
 NIR_band = dataset.read(5)
 
